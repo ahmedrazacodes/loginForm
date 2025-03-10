@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat a new account</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#container2{
+    width: 70%;
+    height: auto;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 5px 15px 2px rgb(92, 90, 90);
+    border-radius: 20px;
+    overflow:visible;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+.heading2{
+    margin-bottom: 20px;
+    color:  rgb(92, 92, 245);
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+}
+
+
+label{
+    padding-left:55px;
+
+}
+
+.logIninput2{
+    height: 5vh;
+    width: 30%;
+    border-radius: 15px;
+    font-size: 1em;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin: 10px;
+    background-color: rgb(209, 208, 208);
+    border: none;
+}
+
+
+.logIninput2:focus{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 5px 7px 3px rgb(149, 148, 148);
+}
+
+
+
+.buttongenerate{
+    width: 8%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgb(92, 92, 245);
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+
+
+
+.buttongenerate:hover{
+    width: 8.6%;
+    height: 5.5vh;
+    box-shadow: 3px 5px 10px 3px rgb(149, 148, 148);
+}
+
+
+.submit{
+    width: 10%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgb(92, 92, 245);
+    color: white;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+.submit:hover{
+    width: 11%;
+    height: 6vh;
+    box-shadow: 3px 5px 10px 3px rgb(149, 148, 148);
+}
+
+
+.password{
+    width: 20%;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div id="container2">
+
+    <h1 class="heading2">Create Account</h1>
+    
+
+    <form class="form-group">
+    <label for="" class="labelDesign">First Name 
+    <input type="text" name=""  placeholder="First Name" class="firstName logIninput2"  >
+
+    <label for="" class="labelDesign">Last Name
+    <input type="text" name=""  placeholder="Last Name"  class="lastName logIninput2" >
+    </form>
+
+    
+    <form class="form-group">
+    <label for="" class="labelDesign" >Country
+    <input type="text" name=""  placeholder="Country" class="logIninput2" style="margin-left: 30px ;" >
+    <label for="" class="labelDesign" >D/O/B
+    <input type="text" name=""  placeholder="01-01-2000" class="logIninput2"  style="margin-left: 35px ;">
+    </form>
+    
+
+    <form class="form-group">
+    <label for="" class="labelDesign">Ph#
+    <input type="text" name=""  placeholder="+92" class="logIninput2" style="margin-left: 60px ;">
+    
+    <label for="" class="labelDesign">E-mail
+    <input type="email" name=""  placeholder="abc@gmail.com"  class="inputEmail logIninput2"  style="margin-left: 30px ;">
+    </form>
+
+    <form class="form-group">
+    <label for="" class="labelDesign" style="margin-left: -15px;">Password
+    <input type="password" name=""  placeholder="**********" class="password logIninput2"  style="margin-left: 25px; margin-right:20px">
+    
+    <label for="" class="labelDesign">Conform Password
+    <input type="password" name=""  placeholder="**********" class="password logIninput2"  style="margin-left: 35px ;">
+    <button class="buttongenerate">Generate</button>
+    </form>
+
+
+   
+   <button type="submit" class="submit" onclick="submitbtn()">Submit</button>
+   
+    
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

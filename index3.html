@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logout-btn {
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <p id="user-email">Logged in as: Guest</p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="main-content">
+        <h1>Welcome</h1>
+        <div class="card">Total Users: 100</div>
+        <div class="card">Total Sales: $5000</div>
+        <div class="card">Active Users: 45</div>
+    </div>
+
+
+</body>
+</html>
